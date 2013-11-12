@@ -35,7 +35,7 @@
 #
 # Copyright 2013 Your name here, unless otherwise noted.
 #
-class brightwp {
+class complete_wordpress {
  mysql::db { 'wordpress':
   user     => 'admin',
   password => 'Bergun21',
