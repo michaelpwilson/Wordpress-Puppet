@@ -15,14 +15,14 @@ Installing the complete wordpress module is simple, run this command on your pup
  ```bash
  puppet module install mwils/complete_wordpress 
  ```
- #### Other modules that are required
  
  completed wordpress also requires:
  1. puppetlabs/apache
  2. puppetlabs/mysql
  
 #### for each module run this command
- ```bash
+ 
+```bash
  puppet module install puppetlabs/<MODULE NAME> 
  ```
 site.pp
