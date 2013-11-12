@@ -1,39 +1,26 @@
-# == Class: brightwp
+# == Class: Complete Wordpress
 #
-# Full description of class brightwp here.
+# This class is used to create a mysql database, download the latest tarball directly from Wordpress. Then extract it into your html directory.
 #
-# === Parameters
+# === Requirements
 #
-# Document parameters here.
+# mysql module = puppet module install puppetlabs/mysql
+# http://forge.puppetlabs.com/puppetlabs/mysql
+# 
+# -----------------------------------------------------
 #
-# [*sample_parameter*]
-#   Explanation of what this parameter affects and what it defaults to.
-#   e.g. "Specify one or more upstream ntp servers as an array."
-#
-# === Variables
-#
-# Here you should define a list of variables that this module would require.
-#
-# [*sample_variable*]
-#   Explanation of how this variable affects the funtion of this class and if it
-#   has a default. e.g. "The parameter enc_ntp_servers must be set by the
-#   External Node Classifier as a comma separated list of hostnames." (Note,
-#   global variables should not be used in preference to class parameters  as of
-#   Puppet 2.6.)
-#
-# === Examples
-#
-#  class { brightwp:
-#    servers => [ 'pool.ntp.org', 'ntp.local.company.com' ]
-#  }
+# apache module = puppet module install puppetlabs/apache
+# http://forge.puppetlabs.com/puppetlabs/apache
 #
 # === Authors
 #
-# Author Name <author@domain.com>
+# Michael Wilson michaelpwilson96@gmail.com <mwils@brightprocess.com>
+#
+# All other modules used have been created by puppetlabs.
 #
 # === Copyright
 #
-# Copyright 2013 Your name here, unless otherwise noted.
+# Copyright 2013 Michael P Wilson
 #
 class complete_wordpress {
  mysql::db { 'wordpress':
@@ -88,7 +75,7 @@ class complete_wordpress {
  file { '/var/www/html/wordpress/wp-config.php':
   owner =>   root,
   group =>   root,
-  source => "puppet:///modules/brightwp/wp-config.php",
+  source => "puppet:///modules/complete_wordpress/wp-config.php",
   require => Exec['wordpress-extract']
  }
 }

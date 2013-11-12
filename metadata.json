@@ -16,7 +16,11 @@
   "checksums": {
     "Modulefile": "9ef2fe39490a625852b24cf2447f0cf4",
     "README": "4c8f6a0359a1604f78d509d5a44950c0",
+<<<<<<< HEAD
     "manifests/init.pp": "e1f2acd740137a4349f52164da569192",
+=======
+    "manifests/init.pp": "6a9cc468f59fe8e37b0ce05057045bf0",
+>>>>>>> bb0aa5d54ed706df2a7be3c0053ca609425d4b93
     "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
     "tests/init.pp": "48e2245c5a933629227bbc910979a39d"
   }
