@@ -1,0 +1,23 @@
+{
+  "name": "mwils-complete_wordpress",
+  "version": "0.1.0",
+  "source": "UNKNOWN",
+  "author": "mwils",
+  "license": "Apache License, Version 2.0",
+  "summary": "UNKNOWN",
+  "description": "UNKNOWN",
+  "project_page": "UNKNOWN",
+  "dependencies": [
+
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "Modulefile": "9ef2fe39490a625852b24cf2447f0cf4",
+    "README": "4c8f6a0359a1604f78d509d5a44950c0",
+    "manifests/init.pp": "e1f2acd740137a4349f52164da569192",
+    "spec/spec_helper.rb": "a55d1e6483344f8ec6963fcb2c220372",
+    "tests/init.pp": "48e2245c5a933629227bbc910979a39d"
+  }
+}
