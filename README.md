@@ -5,6 +5,9 @@ Puppet module to easily install wordpress alongside required services and packag
 
 Currently been tested and works on: Fedora 19 & Centos 6.4
 
+View this project on puppet forge:
+http://forge.puppetlabs.com/mwils/complete_wordpress
+
 How to install
 ------
 
