@@ -49,13 +49,7 @@ include complete_wordpress
 Customization of manifest/init.pp
 ---------------------------------
 
-The init.pp file creates the wordpress database, so you can change the details of the database creation here.
-
-coming updates
---------------
-
-If you are trying this module on ubuntu, file directories by are specified by default to go to /var/www/html. Go into ``` manifests/init.pp ``` and remove all
-html from any file paths - This will updated shortly.
+The init.pp file creates the wordpress database, so you can change the details of the database creation there.
 
 notes
 -----
